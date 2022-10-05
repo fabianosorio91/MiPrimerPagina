@@ -1,17 +1,185 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 </head>
+
 <body>
-    <h1>git</h1>
-    <p>parrafo</p>
-    <ul>
-        <li>lista</li>
-    </ul>
-    
+  <nav class="navbar navbar-expand-lg navbar-light "
+    style="height:90%; width: 92%; align-items: center; margin-left: 4%; background-color: rgb(69, 214, 166);">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"> Noticias Bootstrap</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="Inicio.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Mision.html">Mision</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Vision.html">Vision</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Enlaces directos
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="https://www.elcolombiano.com/" target="_blank">El colombiano</a></li>
+              <li><a class="dropdown-item" href="https://www.pulzo.com/" target="_blank">pulzo</a></li>
+              <li><a class="dropdown-item" href="https://www.minuto30.com/" target="_blank">Minuto 30</a></li>
+            </ul>
+          </li>
+         
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <h1 style="text-align: center;">¡¡¡MIS NOTICIAS BOOTSTRAP!!!</h1>
+
+  <div class="row" style="height:90%; width: 92%; align-items: center; margin-left: 4%;">
+    <div class="col bg-primary">
+      <div><b>Archivos de interes</b></div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt tempora temporibus a officiis quas.
+        Expedita eveniet nobis ipsam, repudiandae, dolor vero soluta vel iste totam porro, placeat reiciendis
+        eos amet.</p>
+    </div>
+
+    <div class="col bg-success" style="margin-left: 2%;">
+      <div><b>Noticias</b></div>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati porro repellendus reprehenderit
+        voluptas molestiae minus consectetur, perferendis aspernatur eveniet sint, sit dolore maiores ullam
+        quaerat sus.</p>
+    </div>
+
+    <div class="col bg-warning" style="margin-left: 2%;">
+      <div> <b>Lo mas Visto</b></div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit beatae hic reiciendis, obcaecati ducimus
+        nostrum omnis similique illo laudantium labore, error perspiciatis porro. Delectus cum accusantium illum
+        maxime ess</p>
+    </div>
+  </div>
+
+  <div style="display: flex;">
+    <div>
+      <img src="./img/Extra.original.jpg" class="rounded img-thumbnail" alt="Cinque Terre"
+        style="width:70% ; margin-left: 24%;">
+    </div>
+    <div>
+      <h2 style="text-align: center ; margin-top: 2%;">Noticias de última hora</h2>
+      <div style="text-align: center ; height:60%; width: 90%; align-items: center; margin-left: 1%; ">
+        <p class="text-primary"><i>Al lado izquierdo se muestra como subir una imagen con un formato directamente de
+            Boostrap</i>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem nulla maxime autem animi voluptatibus, sapiente
+          consequuntur provident, commodi dolor hic, ipsam expedita laboriosam? Eveniet nesciunt voluptas pariatur
+          ratione
+          ipsam exercitationem?</p>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div style="height:50% ; width: 92%; text-align: center; align-items: center; margin-left: 4%; ">
+    <table class="table table-dark table-striped">
+      <thead>
+        <tr>
+          <th>Nombre Periodico</th>
+          <th>Ventas </th>
+          <th>Link</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Colombiano</td>
+          <td>$4´000.000</td>
+          <td>wwww.elcolombiano.com</td>
+        </tr>
+        <tr>
+          <td>Pulzo</td>
+          <td>$3´000.000</td>
+          <td>www.pulzo.com</td>
+        </tr>
+        <tr>
+          <td>Minuto 30</td>
+          <td>$2´000.000</td>
+          <td>www.minuto30.com</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <h1 style="text-align: center;">Empleados del mes!!!</h1>
+
+  <div style="display:flex; margin-left: 4%; margin-right: 4%; background-color: brown;">
+    <div class="container mt-3" style="margin-left: 5%;">
+      <h2>Puesto #1</h2>
+
+      <div class="card" style="width:300px;" >
+        <img class="card-img-top" src="./img/tarjeta2.jpg" alt="Card image" style="width:40%">
+        <div class="card-body">
+          <h2 class="card-title">Fabián Osorio Botero</h2>
+          <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+         
+        </div>
+      </div>
+      <br>
+    </div>
+
+
+    <div class="container mt-3">
+      <h2>Puesto #2</h2>
+      <div class="card" style="width:300px">
+        <img class="card-img-top" src="./img/img4.webp" alt="Card image" style="width:40%;">
+        <div class="card-body">
+          <h2 class="card-title">Pablo Emilio Escobar</h2>
+          <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+         
+        </div>
+      </div>
+      <br>
+    </div>
+
+
+
+     <div class="container mt-3">
+      <h2>Puesto #3</h2>
+      <div class="card" style="width:300px">
+        <img class="card-img-top" src="./img/img5.webp" alt="Card image" style="width:40%">
+        <div class="card-body">
+          <h2 class="card-title">Martín Estrada Contreras</h2>
+          <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+        
+        </div>
+      </div>
+      <br>
+    </div>
+
+
+
+
+
+
+
+  </div>
+  
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
 </body>
+<footer style="margin-left:38%"><b>Pagina creada por Fabián Osorio</b></footer>
+
 </html>
