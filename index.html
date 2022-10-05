@@ -7,11 +7,14 @@
   <title>Bootstrap</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css">
+  
 </head>
 
-<body>
+<body style="background-color:rgba(218, 214, 209, 0.486);">
   <nav class="navbar navbar-expand-lg navbar-light "
-    style="height:90%; width: 92%; align-items: center; margin-left: 4%; background-color: rgb(69, 214, 166);">
+    style="height:90%; width: 92%; align-items: center; margin-left: 4%; border-radius: 2%; background-color: rgba(69, 214, 166, 0.521);">
     <div class="container-fluid">
       <a class="navbar-brand" href="#"> Noticias Bootstrap</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
@@ -40,30 +43,30 @@
               <li><a class="dropdown-item" href="https://www.minuto30.com/" target="_blank">Minuto 30</a></li>
             </ul>
           </li>
-         
-          
+
+
         </ul>
       </div>
     </div>
   </nav>
-  <h1 style="text-align: center;">¡¡¡MIS NOTICIAS BOOTSTRAP!!!</h1>
+  <h1 style="text-align: center;" class="mt-3">¡¡¡MIS NOTICIAS BOOTSTRAP!!!</h1>
 
-  <div class="row" style="height:90%; width: 92%; align-items: center; margin-left: 4%;">
-    <div class="col bg-primary">
+  <div class="row mt-3" style="height:90%; width: 92%; align-items: center; margin-left: 4%; border-radius: 9%;">
+    <div class="col bg-primary" style="border-radius: 2%;">
       <div><b>Archivos de interes</b></div>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt tempora temporibus a officiis quas.
         Expedita eveniet nobis ipsam, repudiandae, dolor vero soluta vel iste totam porro, placeat reiciendis
         eos amet.</p>
     </div>
 
-    <div class="col bg-success" style="margin-left: 2%;">
+    <div class="col bg-success" style="margin-left: 2%; border-radius: 2%;">
       <div><b>Noticias</b></div>
       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati porro repellendus reprehenderit
         voluptas molestiae minus consectetur, perferendis aspernatur eveniet sint, sit dolore maiores ullam
         quaerat sus.</p>
     </div>
 
-    <div class="col bg-warning" style="margin-left: 2%;">
+    <div class="col bg-warning" style="margin-left: 2%; border-radius: 2%;">
       <div> <b>Lo mas Visto</b></div>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit beatae hic reiciendis, obcaecati ducimus
         nostrum omnis similique illo laudantium labore, error perspiciatis porro. Delectus cum accusantium illum
@@ -71,7 +74,7 @@
     </div>
   </div>
 
-  <div style="display: flex;">
+  <div style="display: flex;" class="mt-3">
     <div>
       <img src="./img/Extra.original.jpg" class="rounded img-thumbnail" alt="Cinque Terre"
         style="width:70% ; margin-left: 24%;">
@@ -90,12 +93,11 @@
   </div>
 
 
-
-
-  <div style="height:50% ; width: 92%; text-align: center; align-items: center; margin-left: 4%; ">
-    <table class="table table-dark table-striped">
+  <div style="height:50% ; width: 92%; text-align: left; align-items: center; margin-left: 4%; " class="mt-3">
+    <table id="tabla" class="table table-dark table-striped">
       <thead>
         <tr>
+          <th>Posición</th>
           <th>Nombre Periodico</th>
           <th>Ventas </th>
           <th>Link</th>
@@ -103,35 +105,40 @@
       </thead>
       <tbody>
         <tr>
+          <td>1</td>
           <td>Colombiano</td>
           <td>$4´000.000</td>
           <td>wwww.elcolombiano.com</td>
         </tr>
         <tr>
+          <td>2</td>
           <td>Pulzo</td>
           <td>$3´000.000</td>
           <td>www.pulzo.com</td>
         </tr>
         <tr>
+          <td>3</td>
           <td>Minuto 30</td>
           <td>$2´000.000</td>
           <td>www.minuto30.com</td>
         </tr>
+        
       </tbody>
     </table>
   </div>
-  <h1 style="text-align: center;">Empleados del mes!!!</h1>
 
-  <div style="display:flex; margin-left: 4%; margin-right: 4%; background-color: brown;">
+  <h1 style="text-align: center; " class="mt-3">Empleados del mes!!!</h1>
+  <!--tarjetas-->
+  <div style="display:flex; margin-left: 4%; margin-right: 4%; background-color: brown; border-radius: 2%;" class="mt-3">
     <div class="container mt-3" style="margin-left: 5%;">
       <h2>Puesto #1</h2>
-
-      <div class="card" style="width:300px;" >
-        <img class="card-img-top" src="./img/tarjeta2.jpg" alt="Card image" style="width:40%">
+      <div class="card" style="width:300px;">
+        <img class="card-img-top; mx-auto d-block" src="./img/tarjeta2.jpg" alt="Card image" style="width:40%">
         <div class="card-body">
-          <h2 class="card-title">Fabián Osorio Botero</h2>
+          <h2 class="card-title; text-center">Fabián Osorio Botero</h2>
           <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
-         
+          <a href="https://www1.upme.gov.co/simco/PublishingImages/Pagina_en_construccion.jpg" target="_blank"
+            class="btn btn-primary">Ver perfil</a>
         </div>
       </div>
       <br>
@@ -141,11 +148,13 @@
     <div class="container mt-3">
       <h2>Puesto #2</h2>
       <div class="card" style="width:300px">
-        <img class="card-img-top" src="./img/img4.webp" alt="Card image" style="width:40%;">
+        <img class="card-img-top; mx-auto d-block" src="./img/pablo.jpg" alt="Card image" style="width:40%;">
         <div class="card-body">
-          <h2 class="card-title">Pablo Emilio Escobar</h2>
+          <h2 class="card-title; text-center">Pablo E. Escobar</h2>
           <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
-         
+          <a href="https://www1.upme.gov.co/simco/PublishingImages/Pagina_en_construccion.jpg" target="_blank"
+            class="btn btn-primary">Ver perfil</a>
+
         </div>
       </div>
       <br>
@@ -153,14 +162,15 @@
 
 
 
-     <div class="container mt-3">
+    <div class="container mt-3">
       <h2>Puesto #3</h2>
       <div class="card" style="width:300px">
-        <img class="card-img-top" src="./img/img5.webp" alt="Card image" style="width:40%">
+        <img class="card-img-top; mx-auto d-block" src="./img/martin.webp" alt="Card image" style="width:40%">
         <div class="card-body">
-          <h2 class="card-title">Martín Estrada Contreras</h2>
+          <h2 class="card-title; text-center">Martín Estrada Contreras</h2>
           <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
-        
+          <a href="https://www1.upme.gov.co/simco/PublishingImages/Pagina_en_construccion.jpg" target="_blank"
+            class="btn btn-primary ">Ver perfil</a>
         </div>
       </div>
       <br>
@@ -173,13 +183,44 @@
 
 
   </div>
-  
+
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
     crossorigin="anonymous"></script>
+    <!--datatable-->
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('#tabla').DataTable({
+        "language": {
+          "url": "//cdn.datatables.net/plug-ins/1.10.15/i18n/Spanish.json"
+        }
+      });
+    });
+  </script>
+
+
+
 </body>
-<footer style="margin-left:38%"><b>Pagina creada por Fabián Osorio</b></footer>
+<footer class=" text-center text-white" style="background-color:rgba(218, 214, 209, 0.486);">
+  <div class="mt-3">
+  <a type="button"> <img src="https://cdn-icons-png.flaticon.com/128/2111/2111463.png" height ="30" width="30" /></a>
+  <a type="button"> <img src="https://cdn-icons-png.flaticon.com/128/4494/4494475.png" height ="30" width="30" /></a>
+  <a type="button"> <img src="https://cdn-icons-png.flaticon.com/128/733/733585.png" height ="30" width="30" /></a>
+  <a type="button"> <img src="https://cdn-icons-png.flaticon.com/128/3670/3670151.png" height ="30" width="30" /></a>
+  <a type="button"> <img src="https://cdn-icons-png.flaticon.com/128/5968/5968534.png" height ="30" width="30" /></a>
+ 
+</div>
+
+  <!-- Copyright -->
+  <div class="text-center p-3 mt-3 me-5" style="background-color: rgba(0, 0, 0, 0.267); margin-left: 4%;">
+    © 2020 Copyright:
+    <a class="text-white" href="#">Fabián Osorio Botero</a>
+  </div>
+  <!-- Copyright -->
+</footer>
 
 </html>
